@@ -86,39 +86,53 @@ int main()
             while(opc2 != 8){
             mostrarMenu();
             scanf("  %d",&opc2);
+            system("cls");
             if(opc2 == 1){
                 int creado = altaDoctores(doctores, num_doctores);
                 if (creado == 1){
                     num_doctores++;
                 }
+                system("pause");
             }
             else if(opc2 == 2){
                 int eliminado = bajaDoctores(doctores, num_doctores);
                 if (eliminado == 1){
                     num_doctores--;
                 }
+                system("pause");
             }
             else if(opc2 == 3){
                 listar_Doctores(doctores, num_doctores);
+                system("pause");
             }
             else if(opc2 == 4){
                 consultar_Datos_Doctor(doctores, num_doctores);
+                system("pause");
             }
             else if(opc2 == 5){
                 modificar_Cedula(doctores, num_doctores);
+                system("pause");
             }
             else if(opc2 == 6){
                 modificar_Horario(doctores, num_doctores);
+                system("pause");
             }
             else if(opc2 == 7){
                 modificar_Celular(doctores, num_doctores);
+                system("pause");
             }
             else if(opc2 > 8 || opc2 < 1){
                 printf("  Por favor solo opciones entre 1-8");
             }
+            system("cls");
         }
         guardarDoctores(doctores, num_doctores);
         break;
+        case 3:
+            printf("Gestor de citas realizado por\nChristopher Cuesta\nSteve Torres\nJuan David Calle");
+            system("pause");
+            system("cls");
+            break;
         case 4:
             printf("    GRACIAS POR USAR EL GESTOR DE CITAS\n\n");
             break;

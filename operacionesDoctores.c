@@ -6,6 +6,7 @@
 int comprobarID(struct doctor doctores[100], int num_doctores, int id);
 
 void mostrarMenu(){
+    printf("        MENU DE DOCTORES\n");
     printf("\n  Introduce la opcion que desee realizar:\n");
     printf("  1- Alta Doctor\n");
     printf("  2- Baja Doctor\n");
@@ -18,7 +19,7 @@ void mostrarMenu(){
 }
 
 void listar_Doctores(struct doctor doctores[100], int num_doctores){
-    printf("  Listando los datos del empleado: \n");
+    printf("  Listando los datos de los doctores: \n");
     for (int i=0; i < num_doctores; i++){
         printf("  Nombre: %s\n", doctores[i].nombre);
         printf("  ID del Doctor: %d\n", doctores[i].id);
@@ -41,10 +42,10 @@ int altaDoctores(struct doctor doctores[100], int num_doctores){
     scanf("  %d",&doc.id);
 
     printf("  Introduce la Cedula\n");
-    scanf("  %d",&doc.celular);
+    scanf("  %d",&doc.cedula);
 
     printf("  Introduce el N.Celular\n");
-    scanf("  %d",&doc.cedula);
+    scanf("  %d",&doc.celular);
 
     fflush(stdin);
     printf("  Introduce el horario (Ex: Lun-Vie/00:00-00:00)\n");
