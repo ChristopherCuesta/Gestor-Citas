@@ -30,7 +30,7 @@ int cargar_Doctores(struct doctor doctores[100]){
                     d.cedula = atoi(token);
                 }
                 else if(campo == 4){
-                    d.celular == atoi(token);
+                    d.celular = atoi(token);
                 }
                 else if(campo == 5){
                     strcpy(d.horas,token);
