@@ -20,7 +20,7 @@ int main()
 
     numPac = cargarPacientes(pacientes);
     num_doctores = cargar_Doctores(doctores);
-
+    
     printf("    BIENVENIDO AL GESTOR DE CITAS MEDICAS\n");
     do{
         int opcion = 0;

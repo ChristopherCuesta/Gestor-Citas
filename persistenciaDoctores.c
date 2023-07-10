@@ -9,7 +9,7 @@ int cargar_Doctores(struct doctor doctores[100]){
     FILE *f;
     f = fopen("Doctores.txt","r");
     char cadena[255];
-    char delimitador[] = " ;";
+    char delimitador[] = ";";
 
     while (feof(f) == 0){
 
@@ -29,9 +29,10 @@ int cargar_Doctores(struct doctor doctores[100]){
                 else if(campo == 3){
                     d.cedula = atoi(token);
                 }
-                else if(campo == 3){
+                else if(campo == 4){
                     d.celular == atoi(token);
-                }else if(campo == 5){
+                }
+                else if(campo == 5){
                     strcpy(d.horas,token);
                 }
                 campo++;
