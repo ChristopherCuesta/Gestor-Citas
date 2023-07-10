@@ -50,13 +50,13 @@ int altaPacientes(struct pacientes pacientes[100], int numPac){
     printf("  Introduce hora de la cita (punto para separar los minutos de las horas)\n");
     scanf("  %f",&pac.horas);
     
-    printf("  Introduce la dia de la cita\n");
+    printf("  Introduce el numero del dia de la cita\n");
     scanf("  %d,",&pac.dia);
 
-    printf("  Introduce la mes de la cita\n");
+    printf("  Introduce el numero del mes de la cita\n");
     scanf("  %d,",&pac.mes);
 
-    printf("  Introduce la año de la cita\n");
+    printf("  Introduce el numero del año de la cita\n");
     scanf("  %d,",&pac.año);
 
     printf("  Introduce el numero de telefono\n");
